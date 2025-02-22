@@ -10,7 +10,8 @@ body {
 	background:linear-gradient(45deg,#000000,#000000);
 	margin:0;
 	padding:0;
-	height:100%;
+	height:auto;
+	overflow-x: hidden;
 
   }
 
@@ -18,7 +19,7 @@ body {
 
   main{
     position:relative;
-    padding-bottom:100px; 
+    padding-bottom:50px; 
 	min-height:100%; 
   }
 
@@ -48,7 +49,7 @@ body {
 
 
   
- .nav-container{width:80%;display:flex;align-items:center;position:relative;height:15vh;margin:auto;}
+ .nav-container{width:100%;max-width:80%;display:flex;align-items:center;position:relative;height:15vh;margin:auto;}
 
   nav{position: fixed;
 	top: 0;
@@ -161,7 +162,22 @@ body {
 		display: block;
 	  }
 
-	
+	.resume {
+		padding-left: 10%;
+	}
+	.project-container {
+		width: 100%;
+		padding: 0 10%;
+	}
+	.about-text h2 {
+		padding-left: 10%;
+	}
+	#contact {
+		width: 90%;
+	}
+	.contact h1 {
+		width: 100%;
+	}
 }
 
 
@@ -351,7 +367,7 @@ body {
 	float:center;
 }
 
-.project-container #all {width:80%;padding-left: 120px; display:flex;justify-content:center;flex-wrap:wrap;align-items:center;height:fit-content}
+.project-container #all {width:100%;max-width:80%;padding:0 10%; display:flex;justify-content:center;flex-wrap:wrap;align-items:center;height:fit-content}
 .project-container .project-card{width:200px;height:250px;margin:15px;position:relative;z-index:0;padding:2.5px}
 .project-container .project-card img{width:196px;height:245px}
 .project-container .project-card .project-name{position:absolute;bottom:0;width:100%;height:35px;text-align:center;background-color: #6c0a80;font-size:20px;color:#fdccd5}
@@ -538,6 +554,6 @@ footer {
 
 	.footer-text {
 		float: center;
-		font-size: 30px;
+		font-size: 20px;
 		text-align: center;
 	  }
